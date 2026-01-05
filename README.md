@@ -57,7 +57,7 @@ O projeto está publicado utilizando GitHub Pages:
 
 🔗 Acesse:
 
-https://seu-usuario.github.io/nome-do-repositorio/
+https://marcosvrca.barbearia.com.br
 
 📌 Observações
 
