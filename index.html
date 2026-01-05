@@ -33,7 +33,7 @@
                 <a href="#estilos" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Estilos</a>
                 <a href="#combos" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Combos</a>
                 <a href="#contato" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Contato</a>
-                <a href="https://wa.me/556399881217" target="_blank" class="gold-bg text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">
+                <a href="https://wa.me/5563991120229" target="_blank" class="gold-bg text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">
                     WHATSAPP
                 </a>
             </nav>
@@ -51,7 +51,7 @@
                 <a href="#estilos" class="mobile-link text-lg font-semibold">Estilos</a>
                 <a href="#combos" class="mobile-link text-lg font-semibold">Combos</a>
                 <a href="#contato" class="mobile-link text-lg font-semibold">Contato</a>
-                <a href="https://wa.me/556399881217" class="gold-bg text-black px-6 py-3 rounded-md font-bold text-center">AGENDAR VIA WHATSAPP</a>
+                <a href="https://wa.me/5563991120229" class="gold-bg text-black px-6 py-3 rounded-md font-bold text-center">AGENDAR VIA WHATSAPP</a>
             </nav>
         </div>
     </header>
@@ -81,7 +81,7 @@
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <a href="https://wa.me/556399881217" class="gold-bg text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-[#b8802d] transition-all shadow-[0_0_30px_rgba(153,101,21,0.3)] min-w-[200px]">
+                <a href="#agendamento" class="gold-bg text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-[#b8802d] transition-all shadow-[0_0_30px_rgba(153,101,21,0.3)] min-w-[200px]">
                     AGENDE AQUI
                 </a>
             </div>
@@ -112,7 +112,7 @@
                             <span class="text-4xl font-bold gold-text">35,00</span>
                             <span class="text-sm text-white/40 ml-2">/mês</span>
                         </div>
-                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all">ASSINAR AGORA</button>
+                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all" data-combo="Plano Barba" data-valor="35,00">ASSINAR AGORA</button>
                     </div>
                 </div>
 
@@ -127,7 +127,7 @@
                             <span class="text-4xl font-bold gold-text">65,00</span>
                             <span class="text-sm text-white/40 ml-2">/mês</span>
                         </div>
-                        <button class="w-full py-4 rounded-xl gold-bg text-black font-bold hover:bg-[#b8802d] transition-all">ASSINAR AGORA</button>
+                        <button class="w-full py-4 rounded-xl gold-bg text-black font-bold hover:bg-[#b8802d] transition-all" data-combo="Plano Cortes" data-valor="65,00">ASSINAR AGORA</button>
                     </div>
                 </div>
 
@@ -141,7 +141,7 @@
                             <span class="text-4xl font-bold gold-text">90,00</span>
                             <span class="text-sm text-white/40 ml-2">/mês</span>
                         </div>
-                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all">ASSINAR AGORA</button>
+                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all" data-combo="Plano Luxo" data-valor="90,00">ASSINAR AGORA</button>
                     </div>
                 </div>
 
@@ -156,7 +156,7 @@
                             <span class="text-4xl font-bold gold-text">100,00</span>
                             <span class="text-sm text-white/40 ml-2">/mês</span>
                         </div>
-                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all">ASSINAR AGORA</button>
+                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all" data-combo="Plano Prime" data-valor="100,00">ASSINAR AGORA</button>
                     </div>
                 </div>
             </div>
@@ -200,6 +200,68 @@
         </div>
     </section>
 
+            <!-- AGENDAMENTO -->
+    <section id="agendamento" class="py-24 bg-[#0a0a0a]">
+    <div class="container mx-auto px-6 max-w-3xl">
+        
+        <div class="text-center mb-12">
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">
+            Agende seu Horário
+        </h2>
+        <div class="w-24 h-1 gold-bg mx-auto rounded-full mb-6"></div>
+        <p class="text-white/60 text-lg">
+            Preencha os dados e finalize seu agendamento pelo WhatsApp.
+        </p>
+        </div>
+
+        <form id="form-agendamento" class="grid grid-cols-1 gap-6 bg-[#050505] p-8 rounded-2xl border border-white/5">
+        
+        <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            required
+            class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#996515]"
+        />
+
+        <select
+            id="servico"
+            required
+            class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#996515]"
+        >
+            <option value="">Selecione o serviço</option>
+            <option value="Corte de cabelo">Corte de cabelo</option>
+            <option value="Barba">Barba</option>
+            <option value="Corte + Barba">Corte + Barba</option>
+            <option value="Plano Mensal">Plano Mensal</option>
+        </select>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+            type="date"
+            id="data"
+            required
+            class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#996515]"
+            />
+
+            <input
+            type="time"
+            id="hora"
+            required
+            class="bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#996515]"
+            />
+        </div>
+
+        <button
+            type="submit"
+            class="gold-bg text-black font-bold py-4 rounded-xl hover:bg-[#b8802d] transition-all shadow-lg"
+        >
+            AGENDAR PELO WHATSAPP
+        </button>
+        </form>
+    </div>
+    </section>
+
     <!-- FOOTER -->
     <footer id="contato" class="bg-[#050505] pt-20 pb-10 border-t border-white/5">
         <div class="container mx-auto px-6">
@@ -240,7 +302,7 @@
                     </a>
                     <!-- Telefone -->
                     <a 
-                        href="tel:556399881217"
+                        href="tel:5563991120229"
                         class="text-lg font-bold gold-text block mb-3 hover:underline">
                         (63) 9988-1217
                     </a>
@@ -259,6 +321,41 @@
             </div>
         </div>
     </footer>
+        <!-- CONFIRMAÇÃO AGENDAMENTO -->
+    <div id="confirmacao" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+  <div class="bg-[#050505] border border-white/10 rounded-2xl p-8 max-w-sm w-full text-center">
+    
+    <h3 class="text-2xl font-bold mb-4 gold-text">Confirmação</h3>
+
+    <p class="text-white/70 mb-6">
+      Você será redirecionado para o WhatsApp para finalizar o agendamento.
+    </p>
+
+    <div class="flex gap-4 mb-4">
+      <button id="cancelar"
+        class="w-1/2 py-3 rounded-xl border border-white/20 text-white hover:bg-white/10">
+        Cancelar
+      </button>
+
+      <button id="confirmar"
+        class="w-1/2 py-3 rounded-xl gold-bg text-black font-bold hover:bg-[#b8802d]">
+        Confirmar
+      </button>
+    </div>
+
+    <!-- 🔥 LINK GOOGLE CALENDAR -->
+    <a
+      id="calendarLink"
+      target="_blank"
+      class="hidden mt-4 block text-sm gold-text hover:underline"
+    >
+      📅 Adicionar ao Google Calendar
+    </a>
+
+  </div>
+</div>
+
+
 
     <script src="js/script.js"></script>
 </body>
