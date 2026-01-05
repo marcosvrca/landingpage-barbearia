@@ -1,39 +1,77 @@
-# 💈 Landing Page – Barbearia
+💈 Barbearia do Jorge – Landing Page com Agendamento Inteligente
 
-Este projeto é uma **Landing Page de Barbearia**, desenvolvida com foco em um design moderno, responsivo e objetivo, ideal para apresentação de serviços, informações de contato e identidade visual do negócio.
+Landing page moderna e responsiva desenvolvida para a Barbearia do Jorge, com foco em experiência do usuário, agendamento simplificado e integração com serviços externos.
 
----
+🚀 Tecnologias Utilizadas
 
-## 📌 Objetivo do Projeto
+HTML5
 
-Criar uma página institucional simples e atrativa para uma barbearia, permitindo:
-- Divulgação dos serviços
-- Apresentação visual profissional
-- Facilidade de acesso às informações principais
-- Boa experiência do usuário em desktop e mobile
+CSS3
 
----
+Tailwind CSS
 
-## 🛠️ Tecnologias Utilizadas
+JavaScript Vanilla
 
-- **HTML5** – Estrutura da página  
-- **CSS3** – Estilização e layout responsivo  
-- **JavaScript** – Interatividade (quando aplicável)  
-- **VS Code** – Ambiente de desenvolvimento  
-- **Git & GitHub** – Controle de versão  
+Google Fonts
 
----
+WhatsApp API (wa.me)
 
-## 📂 Estrutura do Projeto
+Google Calendar (link de criação de eventos)
 
-```text
-landingpage-barbearia/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
-│   └── (imagens do projeto)
-└── README.md
+✨ Funcionalidades
+
+📱 Layout totalmente responsivo
+
+🍔 Menu mobile com animação
+
+💈 Seção de combos com planos mensais
+
+📅 Formulário de agendamento inteligente
+
+⏰ Validação de horários conforme o dia da semana
+
+📲 Envio automático do agendamento via WhatsApp
+
+📅 Criação automática de evento no Google Calendar do cliente
+
+✅ Modal de confirmação visual
+
+💬 Botão flutuante do WhatsApp
+
+📅 Integração com Google Calendar
+
+Ao confirmar o agendamento:
+
+Um evento é criado automaticamente no Google Calendar do cliente
+
+O barbeiro recebe o agendamento via WhatsApp
+
+Não é necessário backend
+
+🔜 Evolução futura:
+Integração com n8n para processar os agendamentos recebidos via WhatsApp, validar disponibilidade e criar automaticamente eventos no Google Calendar do destinatário (barbearia).
+
+🌐 Deploy
+
+O projeto está publicado utilizando GitHub Pages:
+
+🔗 Acesse:
+
+https://seu-usuario.github.io/nome-do-repositorio/
+
+📌 Observações
+
+Este projeto foi desenvolvido com foco em:
+
+simplicidade
+
+clareza de código
+
+fácil manutenção
+
+possibilidade de evolução para soluções profissionais (API / automações)
+
+👨‍💻 Autor
+
+Marcos Vinicius Ribeiro de Carvalho
+Projeto para fins educacionais e portfólio.
