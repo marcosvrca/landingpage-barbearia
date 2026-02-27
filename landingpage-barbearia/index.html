@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia do Jorge - Do clássico ao contemporâneo</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS EXTERNO (MESMO CSS DE ANTES) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <span class="text-2xl font-serif font-bold gold-text tracking-tighter uppercase">
+                    Jorge<span class="text-white">Barbearia</span>
+                </span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Início</a>
+                <a href="#estilos" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Estilos</a>
+                <a href="#combos" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Combos</a>
+                <a href="#contato" class="text-sm font-semibold uppercase tracking-widest hover:gold-text transition-colors">Contato</a>
+                <a href="https://wa.me/556399881217" target="_blank" class="gold-bg text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">
+                    WHATSAPP
+                </a>
+            </nav>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-white outline-none">
+                <svg id="menu-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-[#050505] border-t border-white/10 py-6 px-6">
+            <nav class="flex flex-col space-y-4">
+                <a href="#inicio" class="mobile-link text-lg font-semibold">Início</a>
+                <a href="#estilos" class="mobile-link text-lg font-semibold">Estilos</a>
+                <a href="#combos" class="mobile-link text-lg font-semibold">Combos</a>
+                <a href="#contato" class="mobile-link text-lg font-semibold">Contato</a>
+                <a href="https://wa.me/556399881217" class="gold-bg text-black px-6 py-3 rounded-md font-bold text-center">AGENDAR VIA WHATSAPP</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden hero-container">
+        <div class="absolute inset-0 z-0 bg-cover bg-center hero-bg" style="background-image: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=1920');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#050505]"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="mb-6 inline-block">
+                <div class="flex items-center justify-center space-x-2 text-[#996515]">
+                    <span class="w-12 h-px bg-[#996515]"></span>
+                    <span class="uppercase tracking-[0.3em] text-xs font-bold">Tradição & Estilo</span>
+                    <span class="w-12 h-px bg-[#996515]"></span>
+                </div>
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight max-w-5xl mx-auto italic">
+                Do clássico ao contemporâneo, <br class="hidden md:block"/>
+                <span class="gold-text">seu estilo é nossa inspiração</span>
+            </h1>
+            
+            <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+                Onde a lâmina encontra a arte. Viva a experiência completa de uma barbearia premium.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://wa.me/556399881217" class="gold-bg text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-[#b8802d] transition-all shadow-[0_0_30px_rgba(153,101,21,0.3)] min-w-[200px]">
+                    AGENDE AQUI
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- COMBOS / SERVIÇOS -->
+    <section id="combos" class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Combos & Planos</h2>
+                <div class="w-24 h-1 gold-bg mx-auto rounded-full mb-6"></div>
+                <p class="text-white/60 max-w-xl mx-auto text-lg">Escolha o plano ideal para manter seu visual sempre impecável.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Plano Barba -->
+                <div class="combo-card relative bg-[#0f0f0f] border border-white/5 p-8 rounded-2xl flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4">Plano Barba</h3>
+                    <p class="text-white/50 mb-8 flex-grow">3 barbas por mês. Mantenha seu visual sempre alinhado.</p>
+                    <div class="mt-auto">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-sm font-semibold text-white/40 mr-1">R$</span>
+                            <span class="text-4xl font-bold gold-text">35,00</span>
+                            <span class="text-sm text-white/40 ml-2">/mês</span>
+                        </div>
+                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all">ASSINAR AGORA</button>
+                    </div>
+                </div>
+
+                <!-- Plano Cortes -->
+                <div class="combo-card relative bg-[#0f0f0f] border border-white/5 p-8 rounded-2xl flex flex-col h-full ring-1 ring-[#996515]/20">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 gold-bg text-black text-[10px] font-black uppercase px-4 py-1 rounded-full shadow-lg">Popular</span>
+                    <h3 class="text-2xl font-bold mb-4">Plano Cortes</h3>
+                    <p class="text-white/50 mb-8 flex-grow">3 cortes de cabelo por mês. Do degradê ao clássico.</p>
+                    <div class="mt-auto">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-sm font-semibold text-white/40 mr-1">R$</span>
+                            <span class="text-4xl font-bold gold-text">65,00</span>
+                            <span class="text-sm text-white/40 ml-2">/mês</span>
+                        </div>
+                        <button class="w-full py-4 rounded-xl gold-bg text-black font-bold hover:bg-[#b8802d] transition-all">ASSINAR AGORA</button>
+                    </div>
+                </div>
+
+                <!-- Plano Luxo -->
+                <div class="combo-card relative bg-[#0f0f0f] border border-white/5 p-8 rounded-2xl flex flex-col h-full">
+                    <h3 class="text-2xl font-bold mb-4">Plano Luxo</h3>
+                    <p class="text-white/50 mb-8 flex-grow">2 barbas + 3 cortes por mês. Elegância completa.</p>
+                    <div class="mt-auto">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-sm font-semibold text-white/40 mr-1">R$</span>
+                            <span class="text-4xl font-bold gold-text">90,00</span>
+                            <span class="text-sm text-white/40 ml-2">/mês</span>
+                        </div>
+                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all">ASSINAR AGORA</button>
+                    </div>
+                </div>
+
+                <!-- Plano Prime -->
+                <div class="combo-card relative bg-[#0f0f0f] border border-white/5 p-8 rounded-2xl flex flex-col h-full">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-black text-[10px] font-black uppercase px-4 py-1 rounded-full shadow-lg">Vantagem</span>
+                    <h3 class="text-2xl font-bold mb-4">Plano Prime</h3>
+                    <p class="text-white/50 mb-8 flex-grow">3 barbas + 3 cortes por mês. O cuidado definitivo.</p>
+                    <div class="mt-auto">
+                        <div class="flex items-baseline mb-6">
+                            <span class="text-sm font-semibold text-white/40 mr-1">R$</span>
+                            <span class="text-4xl font-bold gold-text">100,00</span>
+                            <span class="text-sm text-white/40 ml-2">/mês</span>
+                        </div>
+                        <button class="w-full py-4 rounded-xl border border-[#996515]/40 gold-text font-bold hover:gold-bg hover:text-black transition-all">ASSINAR AGORA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="estilos" class="py-24 bg-[#0a0a0a]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Galeria de Estilos</h2>
+                <div class="w-24 h-1 gold-bg mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-black">
+                    <img src="imagens/fademoderno.png" alt="Corte 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"><span class="gold-text font-bold uppercase tracking-widest">Fade Moderno</span></div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-black">
+                    <img src="imagens/barbaclassica.png" alt="Corte 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"><span class="gold-text font-bold uppercase tracking-widest">Barba Classic</span></div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-black">
+                    <img src="imagens/urbano.png" alt="Corte 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"><span class="gold-text font-bold uppercase tracking-widest">Estilo Urbano</span></div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-black">
+                    <img src="imagens/poumpador.png" alt="Corte 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"><span class="gold-text font-bold uppercase tracking-widest">Pompadour</span></div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-black">
+                    <img src="imagens/executive.png" alt="Corte 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"><span class="gold-text font-bold uppercase tracking-widest">Executive Cut</span></div>
+                </div>
+                <div class="group relative aspect-square overflow-hidden rounded-xl bg-black">
+                    <img src="imagens/americano.png" alt="Corte 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/40"><span class="gold-text font-bold uppercase tracking-widest">Americano</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contato" class="bg-[#050505] pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1">
+                    <h3 class="text-2xl font-serif font-bold gold-text mb-6 uppercase">Jorge Barbearia</h3>
+                    <p class="text-white/50 leading-relaxed mb-6">Transformando sua autoestima através da estética masculina de alto padrão.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Navegação</h4>
+                    <ul class="space-y-4 text-white/50 text-sm">
+                        <li><a href="#inicio" class="hover:gold-text">Início</a></li>
+                        <li><a href="#estilos" class="hover:gold-text">Estilos</a></li>
+                        <li><a href="#combos" class="hover:gold-text">Combos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Horários</h4>
+                    <ul class="space-y-4 text-white/50 text-sm">
+                        <li class="flex justify-between"><span>Seg - Sex: 08h - 20h</span></li>
+                        <li class="flex justify-between"><span>Sáb: 08h - 18h</span></li>
+                        <li class="flex justify-between"><span>Dom: 09h - 14h</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">
+                        Onde Estamos
+                    </h4>
+                    <!-- Endereço + Maps -->
+                    <a 
+                        href="https://maps.app.goo.gl/DAgUdjgwm4qR2gfJ6"
+                        target="_blank"
+                        class="flex items-center gap-2 text-white/50 text-sm mb-4 hover:text-white transition">
+                        📍 Quadra 1106 Sul - Alameda 24
+                    </a>
+                    <!-- Telefone -->
+                    <a 
+                        href="tel:556399881217"
+                        class="text-lg font-bold gold-text block mb-3 hover:underline">
+                        (63) 9988-1217
+                    </a>
+                    <!-- Instagram -->
+                    <a 
+                        href="https://www.instagram.com/barbeariaa_do_jorge"
+                        target="_blank"
+                        class="flex items-center gap-2 text-white/50 text-sm hover:text-pink-400 transition">
+                        📸 @barbeariaa_do_jorge
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 text-center text-white/30 text-xs tracking-widest uppercase">
+                <p>&copy; 2025 Barbearia do Jorge. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

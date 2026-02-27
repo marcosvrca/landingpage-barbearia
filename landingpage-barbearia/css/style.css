@@ -1,0 +1,51 @@
+:root {
+    --gold: #996515;
+    --black: #050505;
+    --dark-gray: #0f0f0f;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--black);
+    color: #ffffff;
+    margin: 0;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.gold-text { color: var(--gold); }
+.gold-bg { background-color: var(--gold); }
+.gold-border { border-color: var(--gold); }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* Glassmorphism for Header */
+.glass-header {
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Hero Zoom Animation */
+.hero-bg {
+    transition: transform 20s ease;
+}
+.hero-container:hover .hero-bg {
+    transform: scale(1.1);
+}
+
+/* Card Hover Effects */
+.combo-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.combo-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(153, 101, 21, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
