@@ -162,7 +162,7 @@ Gostaria de agendar:
 📅 Data: ${data}
 ⏰ Horário: ${hora}`;
 
-    whatsappURL = `https://wa.me/5563991120229?text=${encodeURIComponent(mensagem)}`;
+    whatsappURL = `https://wa.me/556399881217?text=${encodeURIComponent(mensagem)}`;
 
     document.getElementById("confirmacao").classList.remove("hidden");
     document.getElementById("confirmacao").classList.add("flex");
